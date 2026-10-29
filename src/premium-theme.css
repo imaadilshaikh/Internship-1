@@ -1,0 +1,23 @@
+/* Premium espresso finish: layered contrast instead of flat brown surfaces. */
+:root {
+  --premium-glow: rgba(180,132,108,.16);
+  --premium-cream-glow: rgba(252,222,192,.08);
+}
+body { background: radial-gradient(circle at 82% -8%, rgba(180,132,108,.13), transparent 28%), var(--bg); }
+.sidebar { background: linear-gradient(180deg, #2f1b17 0%, #241411 100%); }
+.topbar { background: linear-gradient(180deg, rgba(47,29,25,.72), rgba(32,19,16,.35)); }
+.card, .metric-card, .kanban-column { background: linear-gradient(145deg, rgba(67,40,32,.86), rgba(43,25,21,.96)); box-shadow: 0 16px 35px rgba(0,0,0,.13); }
+.metric-card::after { background: var(--premium-glow); }
+.metric-card:hover, .card:hover { border-color: rgba(252,222,192,.2); }
+.header-cta, .primary-button, .floating-add { background: linear-gradient(135deg, #B4846C, #9a6653); box-shadow: 0 10px 24px rgba(180,132,108,.25); }
+.header-cta:hover, .primary-button:hover { background: linear-gradient(135deg, #c89578, #B4846C); }
+.new-task-button { background: linear-gradient(135deg, rgba(180,132,108,.18), rgba(180,132,108,.05)); border-color: rgba(180,132,108,.56); }
+.nav-item.active { background: linear-gradient(90deg, rgba(180,132,108,.2), rgba(180,132,108,.07)); box-shadow: inset 3px 0 #E5B299; }
+.progress-track i, .task-progress > div:last-child { background: #B4846C; }
+.task-card { background: linear-gradient(145deg, rgba(67,40,32,.95), rgba(48,28,23,.98)); border-color: rgba(252,222,192,.13); }
+.task-card:hover { border-color: rgba(252,222,192,.3); box-shadow: 0 12px 24px rgba(0,0,0,.16); }
+.focus-card { background: linear-gradient(135deg, rgba(165,193,170,.13), rgba(180,132,108,.12)); border-color: rgba(165,193,170,.22); }
+.search-wrap, .filter-button, .select-button { background: rgba(252,222,192,.045); }
+.theme-option.selected { background: linear-gradient(135deg, rgba(180,132,108,.18), rgba(252,222,192,.04)); border-color: #B4846C; }
+.settings-card { background: linear-gradient(145deg, rgba(67,40,32,.9), rgba(43,25,21,.98)); }
+::selection { background: #B4846C; color: #201310; }
